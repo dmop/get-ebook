@@ -9,4 +9,6 @@ module.exports = function(app) {
   app.get("/search/:name", ebooks.searchEbook);
 
   app.get("/ebook/:url*", ebooks.getEbookLink);
+
+  app.get("/news", ebooks.searchNewEbooks);
 };

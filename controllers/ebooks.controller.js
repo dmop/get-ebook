@@ -82,3 +82,35 @@ exports.searchEbook = function(req, res) {
       // console.log(error);
     });
 };
+
+exports.searchNewEbooks = function(req, res) {
+  const url = "http://epubr.club/";
+
+  axios
+    .get(url)
+    .then(function(response) {
+      const html = response.data;
+
+      const $ = cheerio.load(html);
+      let parsedResults = [];
+
+      $(".entry-title").each(function(i, element) {
+        let a = $(this).children();
+        let url = a.attr("href");
+        let title = a.text();
+
+        let metadata = {
+          title: title,
+          url: url
+        };
+        // Push meta-data into parsedResults array
+        parsedResults.push(metadata);
+      });
+
+      res.status(200).send(parsedResults);
+    })
+    .catch(function(error) {
+      res.status(400).json({ message: "Error" });
+      // console.log(error);
+    });
+};

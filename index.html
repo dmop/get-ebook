@@ -13,8 +13,9 @@
         </h1>
         <blockquote>
             <ul>Only for the epubr.club site</ul>
-            <ul>Search for the book you want on the /search route</ul>
-            <ul>Pass the url of your book to return the download link on the /ebook route</ul>
+            <ul>Search for the book you want on the /search/:name route</ul>
+            <ul>Pass the url of your book to return the download link on the /ebook/:url* route</ul>
+            <ul>Search for the books recently added on the /news route</ul>
         </blockquote>
         <h3>Example usage:</h3>
         <code>https://get-ebook.herokuapp.com/search/cronicas de duna</code>
@@ -54,6 +55,98 @@
                 "url": "http://kimechanic.com/1Dl9"
             }
             ]
+            </code>
+        </br>
+        <h3>Example usage:</h3>
+        <code>https://get-ebook.herokuapp.com/news</code>
+        <h3>Example output:</h3>
+        <code>
+            [
+    {
+        "title": "Billie Holiday – Sylvia Fol",
+        "url": "http://epubr.club/billie-holiday-sylvia-fol/"
+    },
+    {
+        "title": "Me chame pelo seu nome – André Aciman",
+        "url": "http://epubr.club/me-chame-pelo-seu-nome-andre-aciman/"
+    },
+    {
+        "title": "Amor entre Samurais – Ihara Saikaku",
+        "url": "http://epubr.club/amor-entre-samurais-ihara-saikaku/"
+    },
+    {
+        "title": "A senhora do lago | Volume II – Saga do Bruxo Geralt de Rívia #07 – Andrzej Sapkowski",
+        "url": "http://epubr.club/a-senhora-do-lago-volume-ii-saga-do-bruxo-geralt-de-rivia-07-andrzej-sapkowski/"
+    },
+    {
+        "title": "Estrada para a paixão – Robyn Carr",
+        "url": "http://epubr.club/estrada-para-a-paixao-robyn-carr/"
+    },
+    {
+        "title": "Guinada na Vida – Andrea Camilleri",
+        "url": "http://epubr.club/guinada-na-vida-andrea-camilleri/"
+    },
+    {
+        "title": "O Cheiro da Noite – Andrea Camilleri",
+        "url": "http://epubr.club/o-cheiro-da-noite-andrea-camilleri/"
+    },
+    {
+        "title": "Processo Decisório: Para Cursos de Administração e Economia – Max H. Bazerman, Don Moore",
+        "url": "http://epubr.club/processo-decisorio-para-cursos-de-administracao-e-economia-max-h-bazerman-don-moore/"
+    },
+    {
+        "title": "Uma história descomplicada da Filosofia – Fernando Savater",
+        "url": "http://epubr.club/uma-historia-descomplicada-da-filosofia-fernando-savater/"
+    },
+    {
+        "title": "História da riqueza no Brasil: Cinco séculos de pessoas, costumes e governos – Jorge Caldeira",
+        "url": "http://epubr.club/historia-da-riqueza-no-brasil-cinco-seculos-de-pessoas-costumes-e-governos-jorge-caldeira/"
+    },
+    {
+        "title": "Playboy Janeiro|Fevereiro de 2018: Nossas Coelhinhas (+18)",
+        "url": "http://epubr.club/playboy-janeirofevereiro-de-2018-nossas-coelhinhas-18/"
+    },
+    {
+        "title": "O reino selvagem – Simon David Eden",
+        "url": "http://epubr.club/o-reino-selvagem-simon-david-eden/"
+    },
+    {
+        "title": "Eu odeio te amar: Meu plano maluco para dar a volta por cima – Liliane Prata",
+        "url": "http://epubr.club/eu-odeio-te-amar-meu-plano-maluco-para-dar-a-volta-por-cima-liliane-prata/"
+    },
+    {
+        "title": "Galveias – José Luís Peixoto",
+        "url": "http://epubr.club/galveias-jose-luis-peixoto/"
+    },
+    {
+        "title": "Homens Invisíveis: Relatos de uma humilhação social – Fernando Braga da Costa",
+        "url": "http://epubr.club/homens-invisiveis-relatos-de-uma-humilhacao-social-fernando-braga-da-costa/"
+    },
+    {
+        "title": "A coroa da vingança – Deuses do Egito #03 – Colleen Houck",
+        "url": "http://epubr.club/a-coroa-da-vinganca-deuses-do-egito-03-colleen-houck/"
+    },
+    {
+        "title": "Destinos e Fúrias – Lauren Groff",
+        "url": "http://epubr.club/destinos-e-furias-lauren-groff/"
+    },
+    {
+        "title": "Compatriotas – Bo Lidegaard",
+        "url": "http://epubr.club/compatriotas-bo-lidegaard/"
+    },
+    {
+        "title": "Fora da curva – Pierre Moreau,\u200e Florian Bartunek,\u200e Giuliana Napolitano (Orgs)",
+        "url": "http://epubr.club/fora-da-curva-pierre-moreau%e2%80%8e-florian-bartunek%e2%80%8e-giuliana-napolitano-orgs/"
+    },
+    {
+        "title": "As coisas são assim – John Brockman, Katinka Matson (Orgs)",
+        "url": "http://epubr.club/as-coisas-sao-assim-john-brockman-katinka-matson-orgs/"
+    },
+    {
+        "title": "As Origens da Ordem Política – Francis Fukuyama",
+        "url": "http://epubr.club/as-origens-da-ordem-politica-francis-fukuyama/"
+    }
+]
             </code>
     </div>
 </body>
