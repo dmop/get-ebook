@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ebooks microservice</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">
+            Ebooks microservice
+        </h1>
+        <blockquote>
+            <ul>Only for the epubr.club site</ul>
+            <ul>Pass the url of your book to return the download link</ul>
+        </blockquote>
+        <h3>Example usage:</h3>
+        <code>https://get-ebook.herokuapp.com/http://epubr.club/duna-cronicas-de-duna-01-frank-herbert/</code>
+        <h3>Example output:</h3>
+        <code>
+            [
+            {
+                "type": " KINDLE",
+                "url": "http://kimechanic.com/1Dky"
+            },
+            {
+                "type": " EPUB",
+                "url": "http://kimechanic.com/1Dl9"
+            }
+            ]
+            </code>
+    </div>
+</body>
+
+</html>
