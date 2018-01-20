@@ -6,5 +6,7 @@ module.exports = function(app) {
   // define a simple route
   app.get("/", ebooks.home);
 
-  app.get("/new/:url*", ebooks.getEbookLink);
+  app.get("/search/:name", ebooks.searchEbook);
+
+  app.get("/ebook/:url*", ebooks.getEbookLink);
 };

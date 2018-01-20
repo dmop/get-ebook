@@ -13,10 +13,35 @@
         </h1>
         <blockquote>
             <ul>Only for the epubr.club site</ul>
-            <ul>Pass the url of your book to return the download link</ul>
+            <ul>Search for the book you want on the /search route</ul>
+            <ul>Pass the url of your book to return the download link on the /ebook route</ul>
         </blockquote>
         <h3>Example usage:</h3>
-        <code>https://get-ebook.herokuapp.com/new/http://epubr.club/duna-cronicas-de-duna-01-frank-herbert/</code>
+        <code>https://get-ebook.herokuapp.com/search/cronicas de duna</code>
+        <h3>Example output:</h3>
+        <code>
+            [
+            {
+                "title": "Filhos de Duna – Crônicas de Duna #03 – Frank Herbert",
+                "url": "http://epubr.club/filhos-de-duna-cronicas-de-duna-03-frank-herbert/"
+            },
+            {
+                "title": "Messias de Duna – Crônicas de Duna #02 – Frank Herbert",
+                "url": "http://epubr.club/messias-de-duna-cronicas-de-duna-02-frank-herbert/"
+            },
+            {
+                "title": "Duna – Crônicas de Duna #01 – Frank Herbert",
+                "url": "http://epubr.club/duna-cronicas-de-duna-01-frank-herbert/"
+            },
+            {
+                "title": "Cinza do tempo – Gustavo Barroso",
+                "url": "http://epubr.club/cinza-do-tempo-gustavo-barroso/"
+            }
+        ]
+            </code>
+        </br>
+        <h3>Example usage:</h3>
+        <code>https://get-ebook.herokuapp.com/ebook/http://epubr.club/duna-cronicas-de-duna-01-frank-herbert/</code>
         <h3>Example output:</h3>
         <code>
             [
